@@ -26,6 +26,6 @@ int main(){
 	int arr[9]={2,4,6,10,14,16,45,33,32};
 	int size=9;
 	int key=33;
-	cout<<"present"<<binarysearch(arr,0,5,16);
+	cout<<"present"<<binarysearch(arr,0,8,Key);
 	return 0;
 }
