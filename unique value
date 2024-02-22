@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+vector<int>uniquevalue(vector<int>a){
+	vector<int>v;
+    map<int,int>m;
+	for(int i=0;i<a.size();i++){
+		m[a[i]]++;
+   }
+	for(auto i:m){
+	    if(i.second==1){
+	    	v.push_back(i.first);
+		}	
+	}
+	return v;
+}
+int main(){
+vector <int>  a  {2,9,2,8,9,3,8,7,6};
+	vector<int>ans;
+	ans=uniquevalue(a);
+	for(int i=0;i<ans.size();i++){
+     	cout<<ans[i]<<" ";
+    }
+	
+}
