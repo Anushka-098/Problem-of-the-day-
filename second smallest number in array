@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int secondsmallest(int a[],int n){
+    sort(a,a+n);
+    return a[1];
+}
+    
+int main(){
+    int a[]={9,5,4,3,8,1,2,9,8};
+    int n=9;
+    int ans=secondsmallest(a,9);
+    cout<<"ans = "<<ans;
+    
+    
+    return 0;
+}
